@@ -1,0 +1,5 @@
+db:
+    driver-class-name: jdbc.oracle.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: deepak-test-profile
+    password: test-profile-env
