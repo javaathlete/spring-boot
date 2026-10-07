@@ -1,0 +1,28 @@
+
+---
+spring:
+  profiles:
+    active: dev
+...
+---
+spring:
+  config:
+    activate:
+      on-profile: test
+db:
+   driver-class-name: jdbc.oracle.OracleDriver
+   url: jdbc:oracle:thin:@localhost:1521:xe
+   username: deepak-test-devprofile
+   password: test-profile-env
+...
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+db:
+   driver-class-name: jdbc.oracle.OracleDriver
+   url: jdbc:oracle:thin:@localhost:1521:xe
+   username: deepak-dev-profile
+   password: dev-profile-env
+...                                                             
